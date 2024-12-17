@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 import com.google.common.collect.ImmutableMap;
 
-import Appium_RahulShetty1.Appium_RahulShetty1.BaseClass;
+import Practice.BaseClass;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 

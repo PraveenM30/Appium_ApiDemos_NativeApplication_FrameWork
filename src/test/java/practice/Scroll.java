@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import com.google.common.collect.ImmutableMap;
 
-import Appium_RahulShetty1.Appium_RahulShetty1.BaseClass;
+import Practice.BaseClass;
 import io.appium.java_client.AppiumBy;
 
 public class Scroll extends BaseClass {

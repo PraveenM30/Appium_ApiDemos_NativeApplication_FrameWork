@@ -10,7 +10,7 @@ import org.openqa.selenium.DeviceRotation;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Appium_RahulShetty1.Appium_RahulShetty1.BaseClass;
+import Practice.BaseClass;
 
 public class Miscellenious extends BaseClass {
 	@Test

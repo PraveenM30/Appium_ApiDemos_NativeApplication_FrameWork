@@ -1,4 +1,4 @@
-package Appium_RahulShetty1.Appium_RahulShetty1;
+package Practice;
 
 import java.net.MalformedURLException;
 import java.net.URL;
