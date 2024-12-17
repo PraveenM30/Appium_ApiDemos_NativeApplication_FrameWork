@@ -2,32 +2,40 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-29T10:27:16 IST" name="Default suite" finished-at="2024-11-29T10:28:27 IST" duration-ms="70782">
+  <suite started-at="2024-12-17T21:01:23 IST" name="Suite" finished-at="2024-12-17T21:01:52 IST" duration-ms="29128">
     <groups>
     </groups>
-    <test started-at="2024-11-29T10:27:16 IST" name="Default test" finished-at="2024-11-29T10:28:27 IST" duration-ms="70782">
-      <class name="GeneralStore.eCommerce_TC4_SumOfTwoProduct">
-        <test-method signature="AddToCart()[pri:0, instance:GeneralStore.eCommerce_TC4_SumOfTwoProduct@3012646b]" started-at="2024-11-29T10:27:16 IST" name="AddToCart" finished-at="2024-11-29T10:28:27 IST" duration-ms="70672" status="FAIL">
-          <exception class="io.appium.java_client.NoSuchContextException">
+    <test started-at="2024-12-17T21:01:23 IST" name="All Test" finished-at="2024-12-17T21:01:52 IST" duration-ms="29128">
+      <class name="APIDemos.AD_TC005">
+        <test-method is-config="true" signature="StartAppiumAndInvokeApp()[pri:0, instance:APIDemos.AD_TC005@388526fb]" started-at="2024-12-17T21:01:23 IST" name="StartAppiumAndInvokeApp" finished-at="2024-12-17T21:01:41 IST" duration-ms="18927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartAppiumAndInvokeApp -->
+        <test-method signature="TC5(java.util.HashMap)[pri:0, instance:APIDemos.AD_TC005@388526fb]" started-at="2024-12-17T21:01:42 IST" name="TC5" data-provider="getJSONData" finished-at="2024-12-17T21:01:49 IST" duration-ms="7743" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, hintText=Praveen is the hint!, scrollMessage=(And all inside of a ScrollView!), toastMessage=People Names: Group 0 clicked, dragMessage=Dropped!, wifiPassword=12345678}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '130.0.6723'. You could also try to enable automated chromedrivers download as a possible workaround.
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [109a38cb-1fcb-4b78-b74b-d9f1dd507e71, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
-Capabilities {appium:app: C:\Users\user\eclipse-works..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\user\eclipse-works..., automationName: UIAutomator2, platformName: ANDROID, udid: RZ8W1077NCV}, appium:deviceApiLevel: 34, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M135FU, appium:deviceName: RZ8W1077NCV, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZ8W1077NCV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:udid: RZ8W1077NCV, appium:viewportRect: {height: 2342, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 109a38cb-1fcb-4b78-b74b-d9f1dd507e71]]>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '130.0.6723'. You could also try to enable automated chromedrivers download as a possible workaround.
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [109a38cb-1fcb-4b78-b74b-d9f1dd507e71, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
-Capabilities {appium:app: C:\Users\user\eclipse-works..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\user\eclipse-works..., automationName: UIAutomator2, platformName: ANDROID, udid: RZ8W1077NCV}, appium:deviceApiLevel: 34, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M135FU, appium:deviceName: RZ8W1077NCV, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZ8W1077NCV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:udid: RZ8W1077NCV, appium:viewportRect: {height: 2342, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 109a38cb-1fcb-4b78-b74b-d9f1dd507e71
-at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:48)
-at GeneralStore.eCommerce_TC4_SumOfTwoProduct.AddToCart(eCommerce_TC4_SumOfTwoProduct.java:70)
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$ydwtO6uo.sendKeys(Unknown Source)
+at org.Appium.Pageobjects.Preferences.wifi(Preferences.java:37)
+at APIDemos.AD_TC005.TC5(AD_TC005.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,35 +64,17 @@ at org.testng.TestNG.run(TestNG.java:1101)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '130.0.6723'. You could also try to enable automated chromedrivers download as a possible workaround.
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [109a38cb-1fcb-4b78-b74b-d9f1dd507e71, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
-Capabilities {appium:app: C:\Users\user\eclipse-works..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\user\eclipse-works..., automationName: UIAutomator2, platformName: ANDROID, udid: RZ8W1077NCV}, appium:deviceApiLevel: 34, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M135FU, appium:deviceName: RZ8W1077NCV, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: RZ8W1077NCV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:udid: RZ8W1077NCV, appium:viewportRect: {height: 2342, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 109a38cb-1fcb-4b78-b74b-d9f1dd507e71
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:302)
-at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:45)
-... 29 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.appium.java_client.NoSuchContextException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddToCart -->
-      </class> <!-- GeneralStore.eCommerce_TC4_SumOfTwoProduct -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TC5 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:APIDemos.AD_TC005@388526fb]" started-at="2024-12-17T21:01:51 IST" name="tearDown" finished-at="2024-12-17T21:01:52 IST" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- APIDemos.AD_TC005 -->
+    </test> <!-- All Test -->
+  </suite> <!-- Suite -->
 </testng-results>

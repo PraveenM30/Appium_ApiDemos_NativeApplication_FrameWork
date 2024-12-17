@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GeneralStore.eCommerce_TC4_SumOfTwoProduct">
+      <class name="APIDemos.AD_TC004">
         <methods>
-          <include name="AddToCart"/>
+          <include name="tearDown"/>
+          <include name="StartAppiumAndInvokeApp"/>
+          <include name="TC4"/>
         </methods>
-      </class> <!-- GeneralStore.eCommerce_TC4_SumOfTwoProduct -->
+      </class> <!-- APIDemos.AD_TC004 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

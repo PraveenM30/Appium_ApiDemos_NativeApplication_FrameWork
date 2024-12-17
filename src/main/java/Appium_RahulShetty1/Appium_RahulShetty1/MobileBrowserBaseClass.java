@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.testng.annotations.Test;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -20,7 +21,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public class MobileBrowserBaseClass {
 	private AppiumDriverLocalService service;
 	public AndroidDriver driver;
-
+@Test
 	public void StartAppiumAndInvokeApp() throws MalformedURLException {
 
 //	AppiumDriverLocalService service = new AppiumServiceBuilder()
@@ -60,11 +61,10 @@ public class MobileBrowserBaseClass {
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setPlatformName("Android");
 		//options.setChromedriverExecutable("C:\\Users\\user\\AppData\\Local\\Programs\\Appium Server GUI\\resources\\app\\node_modules\\appium\\node_modules\\appium-chromedriver\\chromedriver\\win");
-		options.setDeviceName("Pixel8");
+		//options.setDeviceName("Pixel8");
+		options.setUdid("RZ8W1077NCV");
 		options.setCapability("browserName", "Chrome");
-		//options.setApp("C:\\Users\\user\\eclipse-workspace\\Appium_RahulShetty1\\resources\\ApiDemos-debug.apk");
-		//options.setApp("C:\\Users\\user\\eclipse-workspace\\Appium_RahulShetty1\\resources\\General-Store.apk");
-
+		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
